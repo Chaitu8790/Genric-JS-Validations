@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta tags Used -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"
+      <meta name="description" content="Basic Form">
+      <meta name="keywords" content="HTML,CSS,Bootstrap,JS">
+      <meta name="author" content="tchaitanya.nyros">   
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- External css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+  <!-- JS -->
+      
+        <script src="assets/js/script.js"></script> 
+
+     
+</head>
+
+<body style="background-color:#eee; overflow:auto; ">
+<form name="myform" method="get" action="" onsubmit="return validate()">  
+	<div class="panel-primary">
+		<div class="panel-heading text-left">Genric Form</div>
+			<div class="panel panel-body">						
+				<table>
+					<tr>
+							<td>Fullname :</td>
+							<td>
+								<input type="text" name="firstname" id="fname" onblur="bl()" placeholder="Your name" pattern="^[a-z\d\.]{6,}$" class="form-control">
+								<span id="fnm" ></span>
+							</td>
+					</tr>
+					<tr>
+							<td>Email : </td>
+							<td>
+								<input type="email" name="email" placeholder="genric@gmail.com" class="form-control" id="eid" onblur="bl()">
+								<span id="em"></span>
+							</td>
+					</tr>
+					<tr>
+							<td>Password :</td>
+							<td>
+								<input type="Password" name="pwd" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" class="form-control" id="password" onblur="bl()">
+								<span id="pd"></span>
+							</td>
+					</tr>
+					<tr>
+							<td>Education:</td>
+							<td>
+								<select id="Selectid" name="State" onblur="bl()">
+									<option value="">Select</option>
+									<option value="1">B.Tech</option>
+									<option value="2">B.Com</option>
+									<option value="3">B.Sc</option>
+									<option value="4">MBA</option>
+									<option value="5">MCA</option>
+								</select>
+							<span id="Sid"></span>
+							</td>
+					</tr>
+					<tr>
+							<td>Are You:</td>
+						
+							<td>
+								Student
+								<input type="radio" name="select" id="yes" onblur="bl()"><td>
+								<p style="margin-left: -260px;margin-top:20px;"> Employed</p><td>
+								<input type="radio" name="select" id="no" style="margin-left:-197px;margin-top:20px; ">
+								<span id="cnf"></span>
+							</td>
+						
+					</tr>
+
+				
+					<tr class="checkboxgroup" >
+							<td>Mode:</td>
+							<td>
+								Fulltime<input type="checkbox" name="language" id="fid" onclick="checkallbox1()" onblur="bl()"></td>
+							<td>
+								<p style="margin-left:-260px;margin-bottom:-15px;">Parttime</p>
+								<input type="checkbox" name="language" id="pid" onclick="checkallbox2()" style="margin-left:-200px;margin-top:-10px "> 
+							</td>
+							<td>
+								Correspondence<input type="checkbox" name="language" id="rid" onclick="checkallbox3()">
+								<span id="me"></span>
+							</td>
+					</tr>				
+			
+					<tr>
+							<td>Choose Your Interest:</td>
+						<td>
+							<select id="course" multiple onblur="bl()">
+								<option value="">Accounts</option>
+								<option value="1">Business Development</option>
+								<option value="2">Electronics</option>
+								<option value="3">Finance</option>
+								<option value="4">Programming</option>
+								<option value="5">Stastics</option>
+							</select>
+							<span id="cd"></span>
+						</td
+					</tr>
+					<tr>
+						<td>Address for Communication:</td>
+						<td>
+							<textarea rows="4" cols="50" name="text" class="form-control" id="textarea"onblur="bl()" >
+							</textarea>
+							<span id="txt"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>Date-Time:</td>
+						<td>
+							<input id="date" type="date" onblur="bl()">
+							<span id="dateerror"></span>	
+						</td>
+					</tr>
+					<tr>
+						<td>Time</td>
+						<td>
+							<input type="time" id="time" onblur="bl()">(HH:MM:AM/PM)
+							<span id="terror"></span>
+						</td>
+					</tr>
+					<tr> 
+                    	<td>
+                    		<input type="checkbox" style="margin-left:70px;" value="" class="form-control" name="checkbox"></td>
+                      	<td style="margin-left:-80px">I Agree to Privacy Policy</td>
+                      
+                  	</tr>
+				</table>
+					
+			<input type="submit" value="Submit"/>
+		</div>
+	</div>					
+</form>			
+</body>
+
+</html>

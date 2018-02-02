@@ -1,0 +1,75 @@
+body{
+ 
+
+  width: 100%;
+}
+#fid #pid #rid{
+  display: inline;
+}
+
+@media screen and (max-width: 500px) {
+    #myform{
+  
+ float:right;
+ width:50%;  
+ margin-right:30px;   
+}
+
+input[type=text] select {
+  width:30px;
+margin-right:10px;
+margin-left:55px;
+
+}
+
+input[type=submit] {
+  float:right; 
+  font-size: 10px; 
+
+}
+#checkboxgroup{
+  padding-left:50px;
+}
+#yes{
+  margin-left: 10px;
+}
+} 
+
+#myform
+{
+ 
+   border-radius:1px;
+    background-color:lightgrey;
+    height:100px;
+    width:90%; 
+    margin-top:50px; 
+    margin-left:100px; 
+    margin-bottom:70px;
+    border-style:solid;
+    border-color: #008B88;
+    border-width:1px;  
+
+
+
+    
+}
+input[type=text] select {
+
+  width:50px;
+    padding:9px;
+    margin-bottom:80px;
+    display:inline-flex;
+    border: 1px solid blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+   
+
+
+}
+input[type=submit] {
+    background-color:#4CAF50;
+    color: white;
+    margin-bottom:10px; 
+    margin-left:90%;  
+  font-size: 15px; 
+}
